@@ -34,23 +34,25 @@ public class GamePanel implements Screen {
 
 
     @Override
-            public void show() {
+    public void show() {
 
-                map = new TmxMapLoader().load("maps/map.tmx");
-                renderer = new OrthogonalTiledMapRenderer(map);
-                //TmxMapLoader loader = new TmxMapLoader();
-                //map = loader.load("data/tsxtilemaps/Map01.tmx");
-            }
+        map = new TmxMapLoader().load("maps/map.tmx");
+        renderer = new OrthogonalTiledMapRenderer(map);
+        //TmxMapLoader loader = new TmxMapLoader();
+        //map = loader.load("data/tsxtilemaps/Map01.tmx");
+    }
 
-            @Override
-            public void hide() {
-                dispose();
-            }
+    @Override
+    public void hide() {
+        dispose();
+    }
 
-            @Override
-            public void dispose() {
-                map.dispose();
-                renderer.dispose();
-            }
+    @Override
+    public void dispose() {
+        map.dispose();
+        renderer.dispose();
+    }
 
 }
+
+
