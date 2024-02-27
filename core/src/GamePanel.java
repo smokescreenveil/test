@@ -5,7 +5,7 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 
-public class Play implements Screen {
+public class GamePanel implements Screen {
     private TiledMap map;
     private OrthogonalTiledMapRenderer renderer;
 
