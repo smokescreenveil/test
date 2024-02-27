@@ -1,9 +1,9 @@
 import com.badlogic.gdx.Game;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+//import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
 public class Main extends Game {
-    public static void main(String[] args){
+    public void main(String[] args){
             LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
             config.title = "Game Title";
             config.width = 800;  // Set your desired width
@@ -14,8 +14,11 @@ public class Main extends Game {
         }
 
 
+    @Override
+    public void create() {
 
     }
+}
 
 
 
